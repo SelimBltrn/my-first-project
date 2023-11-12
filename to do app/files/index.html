@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+<link rel="stylesheet" href="css/index.css">
+    <title>To-Do App</title>
+</head>
+<body>
+    <div class="cuerpo">
+        <div id="warning">
+            <p id="myPara">You have exceeded the task limit...</p>
+        </div>
+        <div class="contenedor">
+                    <div id="rBlur"></div>
+            <div class="titulo">
+                <h1>✏️ TO-DO LIST 🎓</h1>
+            </div>
+            <div class="eslogan">
+                <h4>Keep Calm And Carry On - AppWeb by Selim</h4>
+            </div>
+            <div class="creador-tareas" id="creador-tareas">
+                <button id="boton-creador-tareas">Make a task</button>
+            </div>
+            <div id="marco-tareas">
+                <!--Paragraphs-->
+            </div>
+                <div id="container-shapes--task0" class="container-shapes--task">
+                    <div class= "rectangle--task">
+                        <input type="checkbox" class="checkbox-task" autocomplete="off">
+                        <div class= "circle--task"></div>
+                    </div>
+                </div>
+                <div id="container-shapes--task1" class="container-shapes--task">
+                    <div class= "rectangle--task">
+                        <input type="checkbox" class="checkbox-task" autocomplete="off">
+                        <div class= "circle--task"></div>
+                    </div>
+                </div>
+                <div id="container-shapes--task2" class="container-shapes--task">
+                    <div class= "rectangle--task">
+                        <input type="checkbox" class="checkbox-task" autocomplete="off">
+                        <div class= "circle--task"></div>
+                    </div>
+                </div>
+                <div id="container-shapes--task3" class="container-shapes--task">
+                    <div class= "rectangle--task">
+                        <input type="checkbox" class="checkbox-task" autocomplete="off">
+                        <div class= "circle--task"></div>
+                    </div>
+                </div>
+                <div id="container-shapes--task4" class="container-shapes--task">
+                    <div class= "rectangle--task">
+                        <input type="checkbox" class="checkbox-task" autocomplete="off">
+                        <div class= "circle--task"></div>
+                    </div>
+                </div>
+                <div id="container-shapes--task5" class="container-shapes--task">
+                    <div class= "rectangle--task">
+                        <input type="checkbox" class="checkbox-task" autocomplete="off">
+                        <div class= "circle--task"></div>
+                    </div>
+                </div>
+            <div class="eliminate-task">
+                <div class="conteinerTrashIcon">
+                    <div class="trashHom" id="trashTask0">
+                        <img src="/trashIcon.jpg" alt="eliminate-task">
+                        <button></button> <!--Name-->
+                    </div>
+                    <div class="trashHom" id="trashTask1">
+                        <img src="/trashIcon.jpg" alt="eliminate-task">
+                        <button></button> <!--Name-->
+                    </div>
+                    <div class="trashHom" id="trashTask2">
+                        <img src="/trashIcon.jpg" alt="eliminate-task">
+                        <button id="a"></button> <!--Name-->
+                    </div>
+                    <div class="trashHom" id="trashTask3">
+                        <img src="/trashIcon.jpg" alt="eliminate-task">
+                        <button></button> <!--Name-->
+                    </div>
+                    <div class="trashHom" id="trashTask4">
+                        <img src="/trashIcon.jpg" alt="eliminate-task">
+                        <button></button> <!--Name-->
+                    </div>
+                    <div class="trashHom" id="trashTask5">
+                        <img src="/trashIcon.jpg" alt="eliminate-task">
+                        <button></button> <!--Name-->
+                    </div>
+                </div>
+            </div>
+            <form id="formulario-contenedor--tarea" class="form">
+                <div class='contenedor--tarea'>
+                    <div class="titulo--tarea">
+                        <p>¿Qué tarea deseas añadir?</p>
+                    </div>
+                    <div class="escribir-texto—tarea">
+                        <input type="text" id="usuario-texto--tarea" class="inputs-tarea" maxlength="32" autocomplete="off" value="">
+                    </div>
+                    <p class="maximo-aviso--tarea">¡Máximo 32 caracteres!</p>
+                    <div class="cerrar-creador--tarea">
+                        <input type="reset" value="Deshacer" class="inputs-tarea" id="input-deshacer--tarea">
+                    </div>
+                    <div class="crear-creador--tarea">
+                        <input id="input-crear--tarea" class="inputs-tarea" type="reset" value="Aceptar">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src='./js/index.js'></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+* {
+    font-family:'Futura';
+}
+:root{
+    --coloring-p: #BA99FA;
+    --coloring-g: #C1FF72;
+    --coloring-w: #f1f6e1;
+    --coloring-y: #FFDE59;
+    --coloring-r: #F18383;
+    --coloring-b: #0D0D0D;
+    --bordering: 3px solid #000000;
+    --bordering-less: 2px solid #000000;
+    --bordering-less-t: 1px solid #000000;
+}
+body{
+    background-color: var(--coloring-b);
+}
+.cuerpo{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor {
+    background-color:var(--coloring-w);
+    border: var(--bordering);
+    width:40rem;
+    height: 25rem;
+    z-index: 10;
+    border-radius: 30px;
+    position:absolute;
+}
+.titulo, .eslogan , .contenedor--tarea, #warning{
+    width: 35rem;
+}
+.titulo {
+    border: var(--bordering);
+    height:3.2rem;
+    z-index: 20;
+    position:relative;
+    top: 2rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo h1 {
+    font-size:1.5rem;
+}
+.eslogan{
+    border: var(--bordering);
+    height:1.5rem;
+    z-index: 20;
+    position: relative;
+    top: 17rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eslogan h4 {
+    font-size:.7rem;
+}
+.creador-tareas {
+    background-color: var(--coloring-g);
+    border: var(--bordering);
+    border-radius:15px;
+    width:9.8rem;
+    height:1.5rem;
+    position: absolute;
+    bottom: 5rem;
+    left: 14.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#boton-creador-tareas {
+    width:9.8rem;
+    height:1.5rem;
+    font-size: calc(1rem - 3px);
+    font-weight: 700;
+}
+.contenedor--tarea{
+    background: var(--coloring-w);
+    border: var(--bordering-less);
+    height: 9rem;
+    z-index: 60;
+    position: absolute;
+    top: 7rem;
+    left: 2.4rem;
+}
+.titulo--tarea{
+    border: var(--bordering-less);
+    width: 20rem;
+    height: calc(1rem + 4px);
+    z-index: 40;
+    position: relative;
+    top: 0.8rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo--tarea p{
+    font-weight: 500;
+    font-size: .7rem;
+}
+.titulo, .eslogan, .titulo--tarea{
+    background-color: var(--coloring-p);
+}
+.escribir-texto—tarea {
+    background-color: var(--coloring-y);
+    border: var(--bordering-less);
+    width: 26rem;
+    height: 1.8rem;
+    z-index: 40;
+    position: relative;
+    top: calc(2rem - 2px);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#usuario-texto--tarea {
+    width:14.6rem;
+    font-weight:400;
+    font-size: .7rem;
+    outline: transparent;
+}
+.maximo-aviso--tarea{
+    position: relative;
+    top: 1.9rem;
+    left: 5rem;
+    z-index: 40;
+    font-size: .8rem;
+    font-weight: 500;
+    text-decoration: underline;
+    display: inline-block;
+}
+.cerrar-creador--tarea, .crear-creador--tarea{
+    border: var(--bordering-less);
+    width: 5.6rem;
+    height: 1.3rem;
+    z-index: 40;
+    position: relative;
+    top: 1.9rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.cerrar-creador--tarea {
+    background-color: var(--coloring-r);
+    left: 6.5rem;
+}
+.crear-creador--tarea {
+    background-color: var(--coloring-g);
+    left: 6.9rem;
+}
+#input-deshacer--tarea , #input-crear--tarea{
+    z-index: 60;
+    font-size: .7rem;
+    font-weight: 700;
+}
+#rBlur{
+    background-color: var(--coloring-b);
+    border-radius: 30px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+    opacity:80%;
+    filter:blur(80px);
+    position: absolute;
+}
+#marco-tareas div {
+    background-color: var(--coloring-y);
+    border: var(--bordering-less);
+    width: 12.8rem;
+    height: 1.6rem;
+    z-index: 40;
+    position: absolute;
+    /*JS line 7*/
+    align-items:center;
+    justify-content: center;
+}
+#marco-tareas p {
+    font-size:.6rem;
+    font-weight: 400;
+}
+#input-deshacer--tarea, #input-crear--tarea, #boton-creador-tareas, #usuario-texto--tarea, .trashHom button, #warning{
+    background-color: transparent;
+    border: transparent;
+}
+#marco-tarea-uno, #marco-tarea-dos, #marco-tarea-tres {
+    left: 2.3rem;
+}
+#marco-tarea-cuatro, #marco-tarea-cinco, #marco-tarea-seis {
+    left: 20.05rem;
+}
+#marco-tarea-uno, #marco-tarea-cuatro {
+    top: 6.5rem;
+}
+#marco-tarea-dos, #marco-tarea-cinco {
+    top: 10.3rem;
+}
+#marco-tarea-tres, #marco-tarea-seis {
+    top: 14rem;
+}
+.rectangle--task{
+    background-color: var(--coloring-b);
+    width: 2rem;
+    height: 1rem;
+}
+.circle--task{
+    background-color: var(--coloring-w);
+    width: 12px;
+    height: 12px;
+    top: .13rem;
+    left: .2rem;
+    transition: left .5s,
+                background-color .5s linear;
+    -moz-transition: left .5s,
+                background-color .5s linear;
+}
+.checkbox-task:checked{
+    left: 1.1rem;
+}
+.checkbox-task:checked ~ .circle--task{
+    background-color: var(--coloring-g);
+    left: 1.05rem;
+}
+.rectangle--task, .circle--task, .checkbox-task{
+    position: absolute;
+    border-radius: 10px;
+}
+.checkbox-task{
+    width: .6rem;
+    height: .6rem;
+    z-index: 10;
+    top: 0.2rem;
+    left: 0.2rem;
+    opacity: 0;
+}
+#container-shapes--task0, #container-shapes--task1, #container-shapes--task2{
+    left: 15.7rem;
+    position: absolute;
+}
+#container-shapes--task3, #container-shapes--task4, #container-shapes--task5{
+    left: 33.5rem;
+    position: absolute;
+}
+#container-shapes--task0, #container-shapes--task3{
+    top: 6.9rem;
+}
+#container-shapes--task1, #container-shapes--task4{
+    top: 10.7rem;
+}
+#container-shapes--task2, #container-shapes--task5{
+    top: 14.4rem;
+}
+#warning{
+    transition:  background-color .2s ease .5s, border .2s ease .5s;
+    border-radius: 25px;
+    height: 1.6rem;
+    position: absolute;
+    top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#warning p {
+    transition:  font-size 1s ease .5s;
+    color: var(--coloring-w);
+    font-size: 0;
+    font-weight: 300;
+}
+
+.trashHom {
+    border: var(--bordering-less-t);
+    background-color: var(--coloring-r);
+    border-radius: 1.5px;
+    z-index: 20;
+    display: inline-flex;
+}
+.trashHom button, img {
+    width: 1rem;
+    height: 1rem;
+    z-index: 10;
+}
+.trashHom, img {
+    position: absolute;
+}
+#trashTask0, #trashTask1, #trashTask2 {
+    left: 18.4rem;
+}
+
+#trashTask3, #trashTask4, #trashTask5 {
+    left: 36.2rem;
+}
+
+#trashTask0, #trashTask3 {
+    top: 6.85rem;
+}
+#trashTask1, #trashTask4 {
+    top: 10.68rem;
+}
+#trashTask2, #trashTask5 {
+    top: 14.37rem;
+}
